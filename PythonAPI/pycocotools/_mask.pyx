@@ -289,7 +289,7 @@ def frPyObjects(pyobj, h, w):
     # encode rle from a list of python objects
     if type(pyobj) == np.ndarray:
         objs = frBbox(pyobj, h, w)
-    elif type(pyobj) == list and len(pyobj[0]) > 4:
+    elif type(pyobj) == list and len(pyobj[0]) > 4: #Changes to code
         objs = frBbox(pyobj, h, w)
     elif type(pyobj) == list and len(pyobj[0]) > 4:
         objs = frPoly(pyobj, h, w)
